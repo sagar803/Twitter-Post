@@ -51,10 +51,7 @@
     shareOnTwitter();
   });
 
-//   Hide the selected text menu when clicking outside of it
-//   window.addEventListener("mouseup", function (event) {
-//     var menu = document.querySelector(".selected-text-menu");
-//     if (event.target != menu && event.target.parentNode != menu) {
-//       hideSelectedTextMenu();
-//     }
-//   });
+  var exit = document.querySelector(".exit-menu");
+  exit.addEventListener("click", function(event){
+    hideSelectedTextMenu();
+  });

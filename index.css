@@ -1,27 +1,81 @@
+/* Body */
+body {
+  background: #1E1E1E;
+  color: #D4D4D4;
+  font-family: Arial, sans-serif;
+  margin :0;
+  padding :0;
+}
+
+/* header */
+header {
+  margin: 3% 8%;
+  background-color: #000000;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 5px 5px #302e2e ;
+}
+/* Navbar */
+nav {
+  display: flex;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-right: 20px;
+}
+nav li {
+  margin-right: 20px;
+}
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 0.7rem;
+  color: #D4D4D4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 20px;
+  border: 2px dotted #D4D4D4;
+  border-radius: 5px;
+  text-align: center;
+}
+/* Main */
 article {
     padding: 20px;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 13px;
     max-width: 600px;
     margin: 0 auto;
-  }
-
-  .selected-text-menu {
+}
+.selected-text-menu {
     display: none;
     position: absolute;
     background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px #D4D4D4;
     border-radius: 4px;
     z-index: 100;
     padding: 8px;
     font-size: 16px;
     line-height: 1.5;
     min-width: 150px;
-  }
+}
 
-  .selected-text-menu button {
-    background-color: #1da1f2;
-    color: #000000;
+.selected-text-menu button {
+    background-color: #1E1E1E;
+    color: #D4D4D4;
     border: none;
     border-radius: 4px;
     padding: 8px 12px;
@@ -29,8 +83,29 @@ article {
     font-size: 16px;
     line-height: 1.5;
     margin-top: 8px;
-  }
-
-  .selected-text-menu button:hover {
+}
+.selected-text-menu button:hover {
     background-color: #0e76a8;
-  }
+}
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}  
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #999999;
+}
+footer ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+footer ul li{
+  margin: 5px;
+}
+footer a{
+  color: inherit;
+}
