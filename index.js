@@ -10,11 +10,9 @@
   // Show the selected text menu
   function showSelectedTextMenu(x, y) {
     var menu = document.querySelector(".selected-text-menu");
-   menu.style.display = "block";
+    menu.style.display = "block";
     menu.style.left = x + "px";
     menu.style.top = y + "px";
-    console.log(menu.style.left);
-    console.log(menu.style.top);
   }
 
   // Hide the selected text menu
@@ -36,7 +34,7 @@
 
   // Attach event listeners
   var article = document.querySelector("article");
-  article.addEventListener("mouseup", function (event) {
+  article.addEventListener("pointerup", function (event) {
     var selectedText = getSelectedText();
     if (selectedText.length > 0) {
       var x = event.pageX;
